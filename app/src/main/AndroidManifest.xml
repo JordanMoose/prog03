@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PROG03">
-
+        <activity
+            android:name=".ExerciseMenu"
+            android:exported="false" />
+        <activity
+            android:name=".BodyMeasurements"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -26,7 +31,7 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".RunningActivity"
             android:exported="true"
             android:label="@string/title_activity_maps">
             <intent-filter>
