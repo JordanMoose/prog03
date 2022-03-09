@@ -6,4 +6,174 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/profileBackground"
+        android:layout_width="0dp"
+        android:layout_height="285dp"
+        android:backgroundTintMode="add"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="0dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FCF5E8"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastWeekSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/title_last_week_summary"
+        android:textColor="#312E2A"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileBackground" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fillViewport="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastWeekSummary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:clipChildren="true"
+            android:divider="@color/black"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:textAlignment="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mondaySummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/monday"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/runningSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/running"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A" />
+
+                <TextView
+                    android:id="@+id/runningDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/duration_1_hour"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wednesdaySummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/wednesday"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bikingSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/biking"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="@color/dark_brown"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fridaySummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/friday"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/freeWeightsSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/free_weights"
+                    android:textAlignment="center"
+                    android:textColor="#312E2A" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

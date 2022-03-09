@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-anydpi-v24/ic_stat_name.xml" value="0.329" />
+        <entry key="app/src/main/res/drawable/ic_baseline_directions_run_24.xml" value="0.329" />
+        <entry key="app/src/main/res/drawable/ic_dumbbell_solid.xml" value="0.329" />
         <entry key="app/src/main/res/layout/activity_body_measurements.xml" value="0.4125" />
         <entry key="app/src/main/res/layout/activity_exercise_menu.xml" value="0.4125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.43816375732421875" />

@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">PROG03</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="welcome_message">Welcome Back, Jordan</string>
+    <string name="title_last_week_summary">Last week summary</string>
+    <string name="running">Running</string>
+    <string name="biking">Biking</string>
+    <string name="rowing">Rowing</string>
+    <string name="free_weights">Free Weights</string>
+    <string name="stair_climbing">Stair Climbing</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="duration_15_min">15 m</string>
+    <string name="duration_30_min">30 m</string>
+    <string name="duration_1_hour">1 h</string>
 </resources>
